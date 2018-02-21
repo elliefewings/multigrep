@@ -20,3 +20,9 @@ This package uses grepl to search for incomplete strings in an
 object. Equivalent to using x %in% y, if y was a collection of 
 incomplete strings.
 }
+\examples{
+x <- c("a", "b", "c")
+y <- c("apple", "kiwi", "melon", "pear")
+multigrep(x,y)
+[1]  TRUE FALSE FALSE TRUE
+}

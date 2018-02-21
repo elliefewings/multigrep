@@ -8,6 +8,11 @@
 #' @param vect Vector of character strings to be matched
 #' @param x Object you want to search for matches
 #' @return A logical of whether match is found
+#' @examples
+#' x <- c("a", "b", "c")
+#' y <- c("apple", "kiwi", "melon", "pear")
+#' multigrep(x,y)
+#' [1]  TRUE FALSE FALSE TRUE
 #' @export
 multigrep <- function(vect, x) {
   full <- c()
