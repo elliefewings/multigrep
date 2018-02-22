@@ -21,8 +21,8 @@ object. Equivalent to using x %in% y, if y was a collection of
 incomplete strings.
 }
 \examples{
-x <- c("a", "b", "c")
-y <- c("apple", "kiwi", "melon", "pear")
-multigrep(x,y)
+vect <- c("a", "b", "c")
+x <- c("apple", "kiwi", "melon", "pear")
+multigrep(vect,x)
 [1]  TRUE FALSE FALSE TRUE
 }

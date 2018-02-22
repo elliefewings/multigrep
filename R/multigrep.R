@@ -9,16 +9,11 @@
 #' @param x Object you want to search for matches
 #' @return A logical of whether match is found
 #' @examples
-#' x <- c("a", "b", "c")
-#' y <- c("apple", "kiwi", "melon", "pear")
-#' multigrep(x,y)
+#' vect <- c("a", "b", "c")
+#' x <- c("apple", "kiwi", "melon", "pear")
+#' multigrep(vect,x)
 #' [1]  TRUE FALSE FALSE TRUE
 #' @export
 multigrep <- function(vect, x) {
-  full <- c()
-  for (v in vect){
-    full <- c(full, x[grepl(as.character(v), x)])
-  }
-  logi <- x %in% full
-  logi
+as.logical(rowSums(sapply(vect, function(v) {grepl(as.character(v), x)}, USE.NAMES = FALSE))) 
 }
