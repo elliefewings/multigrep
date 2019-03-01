@@ -19,7 +19,7 @@ library(multigrep)
 ### Example1
 ```
 x <- c("a", "b", "c")
-y <- c("apple", "kiwi", "melon", "pear")
+y <- c("apple", "kiwi", "melon", "cherry")
 multigrep(x,y)
 [1]  TRUE FALSE FALSE TRUE
 ```
