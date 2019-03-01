@@ -11,7 +11,7 @@ devtools::install_github("elliefewings/multigrep")
 ```
 devtools::install("multigrep")
 
-Load library
+#Load library
 library(multigrep)
 ```
 
